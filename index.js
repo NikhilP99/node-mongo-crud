@@ -11,7 +11,7 @@ app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
-const url = "mongodb+srv://test:test@cluster1-n60yg.mongodb.net/sample_airbnb?ssl=true&authSource=admin&retryWrites=true&w=majority"
+const url = "mongodb+srv://<username>:<password>@<cluster>/<db>?ssl=true&authSource=admin&retryWrites=true&w=majority"
 
 //Connecting to the database
 mongoose.connect(url,{useNewUrlParser: true}).then(() => {
